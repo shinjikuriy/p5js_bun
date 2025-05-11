@@ -1,0 +1,19 @@
+{
+  "name": "grid_system_studies",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/p5": "^1.7.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "p5": "1.11.5"
+  },
+  "scripts": {
+    "dev": "bun run --console src/index.ts"
+  }
+}
