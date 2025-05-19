@@ -34,4 +34,28 @@ bun run src/index.ts
 ```
 
 
+## Renaming Repository
+If you want to rename this repository and create a new one while keeping the code history, follow these steps:
+
+1. Remove the existing remote:
+```sh
+git remote remove origin
+```
+
+2. Create a new repository using GitHub CLI:
+```sh
+gh repo create new-repo-name --public --source=. --remote=origin
+```
+
+3. Push to the new repository:
+```sh
+git push --set-upstream origin main
+```
+
+> **Note:** If you don't have GitHub CLI installed, you can create a repository manually on GitHub and set the remote using:
+> ```sh
+> git remote add origin https://github.com/username/new-repo-name.git
+> git push --set-upstream origin main
+> ```
+
 
